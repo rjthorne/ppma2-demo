@@ -1,0 +1,13 @@
+/*docs page only */
+
+
+
+
+#X_th, #X_th2, .X {width:10px;}
+
+#doctable th:not(#X_th) {cursor:pointer;}
+
+.Filename {cursor:pointer;}
+.Amount, .PaidDate, .InvoiceDate, .Notes {cursor:text;}
+
+

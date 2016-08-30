@@ -1,0 +1,38 @@
+/*docs page only */
+
+#preheader {position:fixed; top:0px; left:0px; width:100%; height:8px; z-index:2; background-color:#fff;}
+
+#leftdiv {width:504px;}
+#fixed {position:fixed; top:8px;}
+#flowing {margin-top:120px;}
+#header {width:100%; height:68px; background-image:url('images/header.png'); z-index:2; vertical-align:middle;}
+#header h2 {font-family:'Play', Arial, sans-serif; margin:0px 0px 8px 5px; font-size:2.2em; font-weight:normal; color:#fff;}
+#header p {color:#fff; margin:0px 0px 8px 5px;}
+#header a {color:#fff;}
+#headrow1 {z-index:2; background-color:#fff;}
+#headrow2 {z-index:2; background-color:#fff;}
+td, th {border:1px solid #bbb;}
+tbody tr {height:24px;}
+
+#docdiv {width:480px; position:fixed; left:520px; top:8px; border:1px solid #bbb;}
+iframe {width:100%; overflow:hidden;}
+#debug {position:fixed; top:20px; left:300px;}
+.hidden {display:none;}
+
+
+
+#Filename_th, #Filename_th2, .Filename {width:62px;}
+#Amount_th, #Amount_th2, .Amount {width:52px;}
+#PaidDate_th, #PaidDate_th2, .PaidDate {width:74px;}
+#InvoiceDate_th, #InvoiceDate_th2, .InvoiceDate {width:80px;}
+#Notes_th, #Notes_th2, .Notes {width:207px;}
+#X_th, #X_th2, .X {width:10px;}
+
+th:not(#X_th) {cursor:pointer;}
+
+.Filename {cursor:pointer;}
+.Amount, .PaidDate, .InvoiceDate, .Notes {cursor:text;}
+.X {text-align:center; cursor:pointer;}
+
+
+input {width:98%; border:0;}

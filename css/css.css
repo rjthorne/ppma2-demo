@@ -1,0 +1,412 @@
+/*================= global fonts =======================*/
+body, input, select {font-family: 'Play', sans-serif;}
+body {font-size:0.8em;}
+input, select, .xacmenu {font-size:0.9em;}
+
+
+/*=================global template layout=================*/
+body {margin:0; padding:0; border:0; outline:0; width:100%;}
+body {position:static;}
+a {color:#b12230;}
+#header {background-color:#b12230; height:64px; min-width:800px;}
+#innerheader {margin-left:auto; margin-right:auto; height:64px; width:795px; position:relative;}
+#innerheader_login {margin-left:auto; margin-right:auto; height:64px; width:795px; position:relative; text-align:center;}
+#ppma {position:absolute; left:0; top:8px;}
+#ppma_login {margin:20px auto;}
+#topbar {position:absolute; top:5px; right:0; font-size:0.8em; color:#f4f4f4;}
+#topbar a, #topbar a:visited {color:#f4f4f4;}
+#tabdiv {position:absolute; bottom:3px; left:0;}
+#tabdiv a {text-decoration:none;}
+.tab, .tab_active {border:0; font-size:1.2em; font-weight:bold; z-index:1;
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-top-right-radius: 5px;
+	-moz-border-radius-topleft: 5px;
+	-moz-border-radius-topright: 5px;
+	border-top-left-radius: 5px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;}
+.tab {color:#f4f4f4;  padding:4px 6px 2px 6px;}
+.tab:hover {color:#fff; background-color:#c23341; z-index:1;}
+.tab_active {color:#b12230; background-color:#f4f4f4;  padding:4px 6px 3px 6px;}
+#main {margin-left:auto; margin-right:auto; width:795px;}
+#subheader {background-color:#f4f4f4; padding:2em 0 4px 0; z-index:1; margin-bottom:2em; z-index:2; min-width:800px;}
+#innersubheader {margin-left:auto; margin-right:auto;  width:795px; position:relative;}
+#subheader a {text-decoration:none;}
+.subtab, .subtab_active {padding:4px 8px; z-index:2; font-size:1em; color:#b12230; font-weight:bold; background:0; position:relative;
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-top-right-radius: 5px;
+	-moz-border-radius-topleft: 5px;
+	-moz-border-radius-topright: 5px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;}
+.subtab_active {background-color:#ffffff}
+.subtab:hover {color:#c23341; background-color:#fafafa;}
+h2 {color:#b12230; font-weight:bold; font-size:1em;}
+h3 {font-weight:normal; font-size:1em;}
+h3, h4 {color:#b12230;}
+.hidden {position:fixed; bottom:-10000px; /* hack:attack; */}
+.displaynone {display:none;}
+
+
+/*=================global tables=================*/
+table:not(.narrow) {width:100%; }
+#csvex {font-size:0.9em;}
+th {color:#b12230; text-align:left;}
+#datatable th:not(#X_th) {cursor:pointer;}
+.filter {width:98%; border:0; margin-left:1%;}
+tr {/* height:24px; */  background-color:#f4f4f4;}
+.selected {background-color:#ffb;}
+.hover {background-color:#ffe;}
+th {background-color:#ddd;}
+td, th {border:0; padding:2px; vertical-align:top;}
+.xID, .xID_th {display:none;}
+.tbl_company_th {width:140px;}
+.tbl_doctype_th {width:120px;}
+.tbl_idate_th {width:80px;}
+.tbl_pdate_th {width:80px;}
+.tbl_amount_th {width:80px;}
+.x_th {width:16px;}
+.x {text-align:center; cursor:pointer;}
+.tdedit {text-align:center; cursor:pointer;}
+
+
+/* =================global forms================= */	
+.zoomlabel, .zoomlabel-tenant {display:inline-block; text-align:left; color:#b12230}
+.zoomlabel {width:150px;}
+.zoomlabel-tenant {width:80px;}
+.detailinput {width:200px;}
+.fieldset, .rfieldset, .lfieldset  {
+	border:0;
+	background-color:#f4f4f4;
+	margin-bottom:1em;
+	padding: 10px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;}
+legend {background-color:#fff; color:#b12230; font-weight:bold; padding:2px 4px;
+	-webkit-border-bottom-left-radius: 4px;
+	-webkit-border-bottom-right-radius: 4px;
+	-moz-border-radius-bottomleft: 4px;
+	-moz-border-radius-bottomright: 4px;
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;}
+.fieldset {float:left; min-width:290px;} /*hacky*/
+.rfieldset {float:right; width:448px; height:197px; margin-top:10px; position:relative; padding-top:19px;}
+.lfieldset {clear:both; margin-top:10px; position:relative; padding-top:19px;}
+.rfieldset h2, .lfieldset h2 {
+	background-color:#fff;
+	color:#b12230;
+	font-weight:bold;
+	padding:2px 4px;
+	display:inline;
+	position:absolute;
+	top:-21px;
+	-webkit-border-bottom-left-radius: 4px;
+	-webkit-border-bottom-right-radius: 4px;
+	-moz-border-radius-bottomleft: 4px;
+	-moz-border-radius-bottomright: 4px;
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;}
+.rfieldset label, .lfieldset label {color:#b12230;}
+.tenancycont {overflow: auto;}
+.tenancycont h3 {background-color:#ddd;  padding:4px; cursor:pointer;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;}
+.tenancyhide {display:none;}
+
+.tenancycol1 {padding:0; margin:0; width:298px; float:left;}
+.tenancycol2 {padding:0; margin:0; width:258px; float:left;}
+.tenancycol3 {padding:0; margin:0; width:218px; float:left;}
+.tenancyfoot {padding:0; margin:0; clear:both;}
+
+.tenancylabel {display:inline-block; width:100px;}
+.tenancylabel2 {display:inline-block; width:90px;}
+
+.tenancyinput1 {width:150px;}
+.tenancyinput2 {width:40px;}
+.tenancyinput3 {width:80px;}
+.tenancyinput3a {width:50px; margin:0px 30px;} /* fees */
+.tenancyinput4 {width:83px;}
+
+.detailsubmit {clear:both;}
+.checkboxcont {position:relative; margin-right:20px;}
+.checkboxcontl {position:relative; display:inline-block;}
+.checkbox {margin:0; position:absolute; right:-20px; top:2px;}
+.checkboxl {margin:0; position:absolute; left:94px; top:2px;}
+.genericdate {width:80px; margin-right:40px;}
+.datecont {position:relative; display:inline-block;}
+
+
+/*=================global misc=================*/
+input[type=text] { width:150px;  height:15px; padding:1px;}
+select  {width: 155px; height:18px; padding:1px;}
+.button {background-color:#b12230; padding:4px; color:#f4f4f4; font-size:1em; cursor:pointer; font-weight:bold; border:0; -webkit-border-radius: 5px; -moz-border-radius: 5px;}
+.button:hover {background-color:#c23341;}
+.checkspan {margin:0px 8px; float:right;}
+.checkspan label {cursor:pointer;}
+.checkspan input {margin:0; vertical-align:bottom; cursor:pointer;}
+.arrow {height:18px; cursor:pointer;}
+.arrow img {vertical-align:bottom;}
+#zoom, #zoomnew {text-align:center; position:relative;}
+#zoom p,	#zoomnew p {margin:5px 0px;}
+.error {color:#f00;}
+.italic {font-style:italic;}
+.asterisk {color:#f00;}
+ol li {margin-bottom:0.5em;}
+ol[type=i] {margin-top:0.5em;}
+
+
+/* ====================== csv import ================== */
+.csvline-cont {background-color:#f4f4f4; overflow: auto; font-size:0.9em; margin-bottom:1em;}
+.csvline-row {overflow: auto;}
+.csvline-subrow {overflow: auto;}
+.csvline-left {overflow: auto; padding:0; margin:0; width:265px; float:left;}
+.csvline-middle {overflow: auto; padding:0; margin:0; width:265px; float:left;}
+.csvline-right {overflow: auto; padding:0; margin:0; width:265px; float:left;}
+.csvline-label {display:block; width:96px; margin:2px; float:left; color:#b12230; font-weight:bold;}
+.csvline-field {display:block; width:161px; margin:2px; float:left;}
+
+
+
+/*=================document browser=================*/
+.deleted {background-color: #fdd}
+.reconciled {background-color: #bfb}
+#zoomfilename {min-width:100px; display:inline-block;}
+#zoom iframe {width:100%; height:100%;}
+#docs_b #zoom, #docs_b #zoomnew {margin-left:auto; margin-right:auto; width:755px;}
+#docs_b #zoom input {width:98%; border:0;}
+#docs_b #zoom table {margin-bottom:1em;}
+#zoomrec {position:absolute; top:10px; right:150px;}
+
+
+/*=================properties=================*/
+#tdate {border:0;}
+#thisprop {font-weight:bold;}
+#addfeeproperty {width:150px; margin-right:20px;}
+#addfeeamount, #addadjustmentamount, #editfeeamount {width:60px; margin-right:20px;}
+#addfeedesc, #editfeedesc {width:230px; margin-right:20px;}
+#addfeetype, #editfeetype {width:90px; margin-right:20px;}
+#addfeedesctenant, #addadjustmentdesc { margin-right:20px; width:190px;} /* hack */
+#addfee, #addadjustment, #editfeebuttons {position:absolute; right:20px;}
+#editfeediv {display:none;}
+#editfeebuttons {display:inline-block;}
+#pleaseselecttenant {margin:1em 0px;}
+#tenantfeesxac, #adjustmentsxac {width:232px;}
+#propfeesxac {width:232px;}
+
+/*=================bank accounts=================*/
+.bankaccount, .bankaccount-new, .statementcont {
+	position:relative;
+	border:0;
+	background-color:#f4f4f4;
+	margin-bottom:1.5em;
+	padding: 10px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;}
+.bankaccount h3, .bankaccount-new h3, .statementcont h3 {
+	background-color:#fff;
+	color:#b12230;
+	font-weight:bold;
+	padding:2px 4px;
+	display:inline;
+	position:absolute;
+	top:-21px;
+	-webkit-border-bottom-left-radius: 4px;
+	-webkit-border-bottom-right-radius: 4px;
+	-moz-border-radius-bottomleft: 4px;
+	-moz-border-radius-bottomright: 4px;
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;}
+.bankaccount-new {margin-top:2em;}
+.bankaccount h3 {cursor:move;}
+.bankaccount label, .bankaccount-new label, .statementcont label {color:#b12230;}
+#newacc-name, .acc-name {margin-right:20px;}
+#newacc-bank, .acc-bank {margin-right:20px;}
+.selectaccount {margin-right:20px;}
+#newacc-notes, .acc-notes {width:240px;}
+.amendbankaccount {color:#b12230; cursor:pointer;}
+.amendbankaccountfields {display:none;}
+#uploader {margin-bottom:1.5em; min-height:47px;}
+.statementpreviewcont {width:775px; margin:1em 0; padding:0; max-height:100px; overflow-y: scroll;}
+.statementpreview {width:100%; border:1px solid #000; border-collapse:collapse;}
+.statementpreview  td {padding: 2px; border:1px solid #000; position:relative;}
+.ignoreline {color:#aaa;}
+.dupeline {font-style:italic;}
+.reconciledline {color:#080; font-weight:bold;}
+.partreconciledline {color:#f80; font-weight:bold;}
+.importstatement {margin: 0px 18px;}
+.selectaccount {margin-bottom: 1em;}
+#status {margin-bottom: 1em;}
+.previewline {cursor:pointer;}
+/* reconciliaton */
+#reconbankselcont h3, #paymentctypeselcont h3, .statementexbankcont h3 {
+	background-color:#fff;
+	color:#b12230;
+	font-weight:bold;
+	padding:2px 4px;
+	display:inline;
+	display:inline;
+	position:absolute;
+	top:-21px;
+	-webkit-border-bottom-left-radius: 4px;
+	-webkit-border-bottom-right-radius: 4px;
+	-moz-border-radius-bottomleft: 4px;
+	-moz-border-radius-bottomright: 4px;
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;}
+#reconbanksel, #paymentctypesel, #statementsel {margin-top:1em;}
+#reconbankselcont label, #paymentctypeselcont label, #statementsel label, .statementexbankcont label {color:#b12230;}
+.reconline, #reconbankselcont, #paymentctypeselcont, .statementexbankcont {position:relative;
+	border:0;
+	background-color:#f4f4f4;
+	margin-bottom:1.5em;
+	padding: 10px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;}
+.recondate, .reconamount {font-weight:bold; color:#000;}
+.reconamount {display:inline-block; position:absolute; right:10px;}
+.reconloading {display:inline-block; margin-left:10px;}
+.recondesc {margin-top: 1em;}
+.reconsubline {margin-top: 1em; border-top: 1px solid #ddd; padding-top:1em;}
+.reconciledbg {background-color:#afa;}
+.ignoredbg {background-color:#aaa;}
+.reconciledchild, .ignoredchild {display:inline-block; width: 620px;}
+.xaccont {display:inline-block; position:relative; width: 232px;}
+.xaccont, .reconxacinfo, .reconpaymentdate, .recon, .reconsplit, .dischmabled {margin-right: 10px;}
+.reconxac { width: 232px; }
+.xacmenu {
+	display:none;
+	position:absolute;
+	top:17px;
+	background-color:#fff;
+	border:1px solid #a9a9a9;
+	padding: 1px;
+	width: 232px;
+	height:8em;
+	overflow-x:hidden;
+	overflow-y:scroll;
+	z-index:2147483647;}
+.xacmenu ul {margin:0; padding:0;}
+.xacmenu li {
+	display:none;
+	list-style-type:none;
+	cursor:pointer;
+	z-index:2;}
+/* .xacmenu li:hover {background-color:#ffe;} */
+.xacsel {background-color:#ffb;}
+.reconxacinfo {display:inline-block; width:180px; color:#b12230;}
+.reconpaymentdate {width: 70px;}
+.rsdisabled, .rsdisabled:hover {background-color:#aaa; cursor:default;}
+.reconsplitamount {width:50px;}
+/* .reconsplit, .reconignore {background-color:#aaa;} */
+.reconignore {position:absolute; right:10px;}
+.unsplitdiv {text-align:right; border-top: 1px solid #ddd; margin-top:1em;}
+.unsplit { display:inline-block; margin-top: 1em; margin-right: 60px;}
+#xaclookuplist {display:none;}
+#paymentchangedate {width: 70px;}
+.statementexbankcont p {margin:1em 0 0 0;}
+.statementexbankchecklabel {width: 160px; margin-left: 20px;}
+.statementexbankcheckcont {display:inline-block; position:relative;}
+.statementexbankcheck {position:absolute; left:0px; bottom:-2px;}
+
+
+/*=================reports=================*/
+
+#reportoptions select {margin-right:20px;}
+.ui-datepicker-trigger {position:absolute; bottom:-2px; right:16px;}
+.datecont {display:inline-block; position:relative; height:20px;}
+.datecont input {margin-right:40px;}
+.optionline {position:relative; margin:0;}
+#tenantstatementxac {width:232px;}
+.reportbuttons {position:absolute; display:inline-block; right:10px; bottom:0px;}
+
+
+/* landlord report */
+#llr {margin:0; padding:0; font-size:1.1em; }
+#llr a{text-decoration:none; color:#000;}
+#reportcont {margin:0 80px; max-width:1040px;}
+#reportdate {text-align:right;}
+#reportcont h1 {text-align:center;}
+#reportcont h2 {text-align:center; color:#000; font-size:1.3em;}
+#reportcont h3 {text-align:center; color:#000; margin-top:2em; font-weight:bold; font-size:1.1em;}
+#reportcont h4 {color:#000; margin: 0.5em 0; }
+#reportcont table {border-collapse:collapse;}
+#reportcont tr {background-color:#fff}
+#reportcont th {padding:5px;}
+#reportcont td {padding:5px;}
+#reportcont td:not(.borderless) {border:1px solid #aaa;}
+#reportcont .date {width:120px;}
+#reportcont .amount {width:100px; text-align:right;}
+#reportcont .total {font-weight:bold;}
+#reportcont .alignright {text-align:right;}
+
+
+/* roomtable */
+
+#roomtablepropertytype {width:100px;}
+#roomtablemode {width:160px;}
+#roomtable table {border-collapse:collapse;}
+#roomtable th {padding:3px;}
+#roomtable td {padding:3px;}
+#roomtable th {border:1px solid #000;}
+#roomtable td {border:1px solid #000;}
+#roomtable a {color: #000;}
+
+.rtg {background-color: #0f0;}
+.rto {background-color: #f80;}
+.rty {background-color: #ff0;}
+.rtr {background-color: #f00;}
+
+/*
+.rtg {background-color: #afa;}
+.rto {background-color: #fca;}
+.rty {background-color: #ffa;}
+.rtr {background-color: #faa;}
+*/
+
+/* arrears */
+
+.arrearsline h3 {
+	background-color:#fff;
+	color:#b12230;
+	font-weight:bold;
+	padding:2px 4px;
+	display:inline;
+	display:inline;
+	position:absolute;
+	top:-21px;
+	z-index:100;
+	-webkit-border-bottom-left-radius: 4px;
+	-webkit-border-bottom-right-radius: 4px;
+	-moz-border-radius-bottomleft: 4px;
+	-moz-border-radius-bottomright: 4px;
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;}
+.arrearsline label {color:#b12230}
+.arrearsinfo {overflow: auto; margin-bottom:0.5em;}
+.arrearsbalance, .arrearssince, .arrearslp, .arrearsli {display:inline-block; overflow: auto; float:left;}
+.arrearsbalance {width:120px;}
+.arrearssince {width:180px;}
+.arrearslp, .arrearsli  {width: 160px;}
+.arrearsline select {width:140px;}
+.arrearsinfo {border-bottom:1px solid #ddd; padding-bottom:0.5em;}
+.arrearsline ul {padding-left:20px;}
+.arrearscomments {font-size:0.8em;}
+.arrearscomments li {margin-bottom:0.5em;}
+.resolved {font-style:italic; display:none; color:#777}
+.hiddenli {display:none;}
+.newarrearsnoteli {display:none;}
+.newarrearsnote, .editarrearsnote {width:400px;}
+.addnote, .editnote, .resolvenote, .showresolved, .submitarrearsnote, .submiteditednote, .canceleditnote {color:#b12230; text-decoration:underline; cursor:pointer;}
+
+
+/* settings */
+
+.xero_acc_labels {width:230px; display:inline-block; color:#b12230;}
+.xero_acc_inputs {width:60px;}
+.xero_track_labels {width:70px; display:inline-block; color:#b12230;}
+
+#templogin { width:500px; margin:2em auto;}

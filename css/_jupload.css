@@ -1,0 +1,146 @@
+
+.ajax-file-upload-statusbar {
+	background-color:#f4f4f4;
+	margin-top: 10px;
+	width: 785px;
+	padding: 5px;
+	-webkit-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	border-radius: 5px;
+}
+.ajax-file-upload-filename {
+	width: 100%;
+	height: auto;
+	margin: 0 5px 5px 10px;
+	color: #000
+}
+.ajax-file-upload-progress {
+	display: inline-block;
+	margin: 0 10px 5px 10px;
+	position: relative;
+	width: 710px;
+	/* border: 1px solid #ddd;
+	padding: 1px;
+	border-radius: 3px; */
+	-webkit-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	border-radius: 5px;	
+	
+}
+.ajax-file-upload-bar {
+	background-color: #4eddcf;
+	width: 0;
+	/* height: 20px;
+	border-radius: 3px */
+	height:25px;
+	-webkit-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	border-radius: 5px;	
+}
+.ajax-file-upload-percent {
+	position: absolute;
+	display: inline-block;
+	top: 3px;
+	left: 48%
+}
+.ajax-file-upload-red {
+	background-color: #f00;
+	display: inline-block;
+	color: #fff;
+	padding: 5px;
+	text-decoration: none;
+	font-weight:bold;
+	cursor: pointer;
+	vertical-align: top;
+	margin-right:5px;
+	-webkit-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	border-radius: 5px;
+}
+.ajax-file-upload-green {
+	background-color: #b12230;
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+	color: #fff;
+	padding: 5px;
+	text-decoration: none;
+	font-weight:bold;
+	cursor: pointer;
+	vertical-align: top;
+	margin-right:5px;
+	-webkit-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	border-radius: 5px;
+}
+.ajax-file-upload {
+	background-color:#b12230;
+	padding:5px 4px 3px 4px;
+	color:#f4f4f4;
+	font-size:1em;
+	cursor:pointer;
+	font-weight:bold;
+	vertical-align:middle;
+	border:0;
+	-webkit-border-radius:5px;
+	-moz-border-radius: 5px;
+	display: inline-block;
+	height:17px;
+	margin-right:10px;
+}
+  
+.ajax-file-upload:hover {
+	background: #c23341;
+}
+
+.ajax-upload-dragdrop {
+	position:relative;
+	background-color:#f4f4f4;
+	width:775px;
+	color: #ddd;
+	text-align:left;
+	vertical-align:middle;
+	padding:11px;
+	height: 25px;
+	margin-bottom:1em;
+	-webkit-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	border-radius: 5px;	
+}
+
+.dragdroptext {
+	position:absolute;
+	top:16px;
+}
+
+#status {
+	display:none;
+	margin-top:1em;
+	background-color:#f4f4f4;
+	width:775px;
+	padding:10px;
+	-webkit-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	border-radius: 5px;	
+}

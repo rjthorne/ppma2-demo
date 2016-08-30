@@ -1,0 +1,45 @@
+.droparrow {
+	cursor:pointer;
+	border:4px solid transparent;
+}
+
+.dropdown {
+ 	width:120px;
+	position:absolute;
+	top:0;
+	left:0;
+	height:0px;
+	text-align:left;
+}
+
+div.submenu {
+	background-color:#fff;
+	color:#000;
+	font-weight:normal;
+	position:absolute;
+	top:0px;
+	left:0px;
+	z-index:100;	
+	display:none;
+	border:1px solid #b12230;
+	border-radius:4px;
+}
+
+
+.dropdown li {
+	display:block;
+	padding:2px;
+	cursor:pointer;
+	text-decoration:none;
+	font-style:normal;
+}
+
+.dropdown li:hover {
+	color:#b12230;
+}
+
+.root {
+	list-style:none;
+	margin:0px;
+	padding:0px;
+}
